@@ -9,5 +9,6 @@
 #ifndef YESandbox_h
 #define YESandbox_h
 
+#import "YESandboxSave.h"
 
 #endif /* YESandbox_h */
