@@ -11,11 +11,20 @@ s.license     = { :type => "MIT", :file => "LICENSE" }
 
 s.platform = :ios, '8.0'
 s.requires_arc = true
-s.source_files = 'YESandbox/**/*.{h,m}'
+s.source_files = 'YESandbox/YESandbox.h'
+s.public_header_files = 'YESandbox/YESandbox.h'
 
 s.ios.deployment_target = '8.0'
 
 
 s.dependency 'SVProgressHUD'
+
+ s.subspec 'Save' do |ss|
+   
+    ss.source_files = 'YESandbox/Save/**/*.{h,m}'
+    ss.public_header_files = 'YESandbox/Save/**/*.h'
+    
+  end
+
 
 end
