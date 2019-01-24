@@ -92,7 +92,6 @@
 		B445A5D421F87184003ABAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B445A5E221F871FB003ABAD3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		B445A5E321F871FB003ABAD3 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
-		B445A5E421F871FB003ABAD3 /* YESandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESandbox.h; sourceTree = "<group>"; };
 		B445A5E521F871FB003ABAD3 /* YESandboxSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESandboxSave.h; sourceTree = "<group>"; };
 		B445A5E621F871FB003ABAD3 /* YESandboxSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESandboxSave.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,7 +202,6 @@
 			children = (
 				B445A5E221F871FB003ABAD3 /* Singleton.h */,
 				B445A5E321F871FB003ABAD3 /* Singleton.m */,
-				B445A5E421F871FB003ABAD3 /* YESandbox.h */,
 				B445A5E521F871FB003ABAD3 /* YESandboxSave.h */,
 				B445A5E621F871FB003ABAD3 /* YESandboxSave.m */,
 			);
