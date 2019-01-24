@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "YESandboxSave.h"
+
 
 @interface ViewController ()
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [YESandboxSave.sharedSandboxSave  insertObject:@[@1, @2] withFileName:@"numArr"];
+    
+    
 }
 
 

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Singleton.h"
 
 typedef NS_ENUM(NSUInteger, QueryObject){
     QueryObjectStr,       // 字符串
@@ -19,7 +18,10 @@ typedef NS_ENUM(NSUInteger, QueryObject){
 
 @interface YESandboxSave : NSObject
 
- SingletonH(SanboxSave);
+// SingletonH(SandboxSave);
+
++ (id)sharedSandboxSave;
+
 
 //=======================================================================
 //==========*** 单个对象(array, dic, str, img)存入沙盒路径下 ***=============

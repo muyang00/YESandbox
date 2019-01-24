@@ -20,7 +20,6 @@
 		B445A5D521F87184003ABAD3 /* YESandboxiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B445A5C521F87184003ABAD3 /* YESandboxiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B445A5D821F87184003ABAD3 /* YESandboxiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B445A5C321F87184003ABAD3 /* YESandboxiOS.framework */; };
 		B445A5D921F87184003ABAD3 /* YESandboxiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B445A5C321F87184003ABAD3 /* YESandboxiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B445A5E721F871FB003ABAD3 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B445A5E321F871FB003ABAD3 /* Singleton.m */; };
 		B445A5E821F871FB003ABAD3 /* YESandboxSave.m in Sources */ = {isa = PBXBuildFile; fileRef = B445A5E621F871FB003ABAD3 /* YESandboxSave.m */; };
 /* End PBXBuildFile section */
 
@@ -90,8 +89,6 @@
 		B445A5CB21F87184003ABAD3 /* YESandboxiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YESandboxiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B445A5D221F87184003ABAD3 /* YESandboxiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YESandboxiOSTests.m; sourceTree = "<group>"; };
 		B445A5D421F87184003ABAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B445A5E221F871FB003ABAD3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		B445A5E321F871FB003ABAD3 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		B445A5E521F871FB003ABAD3 /* YESandboxSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESandboxSave.h; sourceTree = "<group>"; };
 		B445A5E621F871FB003ABAD3 /* YESandboxSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESandboxSave.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,8 +197,6 @@
 		B445A5E121F871FB003ABAD3 /* YESandbox */ = {
 			isa = PBXGroup;
 			children = (
-				B445A5E221F871FB003ABAD3 /* Singleton.h */,
-				B445A5E321F871FB003ABAD3 /* Singleton.m */,
 				B445A5E521F871FB003ABAD3 /* YESandboxSave.h */,
 				B445A5E621F871FB003ABAD3 /* YESandboxSave.m */,
 			);
@@ -390,7 +385,6 @@
 				B445A5E821F871FB003ABAD3 /* YESandboxSave.m in Sources */,
 				B445A59C21F8715B003ABAD3 /* main.m in Sources */,
 				B445A58B21F8715B003ABAD3 /* AppDelegate.m in Sources */,
-				B445A5E721F871FB003ABAD3 /* Singleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +617,7 @@
 		B445A5DB21F87184003ABAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -645,6 +640,7 @@
 		B445A5DC21F87184003ABAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

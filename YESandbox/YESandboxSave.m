@@ -23,7 +23,17 @@ static NSString *const data = @"data.jpg";
 
 @implementation YESandboxSave
 
-SingletonM(SanboxSave);
+//SingletonM(SandboxSave);
+
++ (id)sharedSandboxSave {
+    static YESandboxSave  * sandboxSave= nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sandboxSave = [[self alloc]init];
+    });
+    return sandboxSave;
+}
+
 
 - (void)insertObject:(id)object withFileName:(NSString *)fileName{
 
